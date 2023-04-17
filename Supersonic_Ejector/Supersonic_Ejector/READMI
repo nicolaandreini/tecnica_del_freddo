@@ -1,0 +1,12 @@
+Nella cartella è presente la simulazione di un eiettore supersonico con fluido R1233ZD single phase, per lanciarla eseguire da terminale i seguenti comandi:
+
+of2212  
+decomposePar -force
+mpirun -np 4 rhoSimpleFoam -parallel   //se si vuole lanciare in parallelo 
+rhoSimpleFoam                          //se si vuole lanciare in serie
+
+
+
+a fine simulazione è possibile resettare il calcolo col comando:
+
+foamCleanTutorials 
